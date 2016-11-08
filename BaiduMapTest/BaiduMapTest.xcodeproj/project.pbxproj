@@ -33,6 +33,12 @@
 		054DE6C21DD1ACF9003FA36B /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 054DE6C11DD1ACF9003FA36B /* libstdc++.6.0.9.tbd */; };
 		054DE6C41DD1AD96003FA36B /* mapapi.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 054DE6C31DD1AD96003FA36B /* mapapi.bundle */; };
 		054DE6CA1DD1B553003FA36B /* BMKMainListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 054DE6C91DD1B553003FA36B /* BMKMainListViewController.m */; };
+		054DE6CE1DD1C0DB003FA36B /* BMKBaseMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 054DE6CD1DD1C0DB003FA36B /* BMKBaseMapViewController.m */; };
+		054DE6D11DD1C0F2003FA36B /* BMKPoiSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 054DE6D01DD1C0F2003FA36B /* BMKPoiSearchViewController.m */; };
+		054DE6D41DD1C27C003FA36B /* BMKSuperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 054DE6D31DD1C27C003FA36B /* BMKSuperViewController.m */; };
+		054DE6D91DD1C6D9003FA36B /* custom_config_黑夜 in Resources */ = {isa = PBXBuildFile; fileRef = 054DE6D61DD1C6D9003FA36B /* custom_config_黑夜 */; };
+		054DE6DA1DD1C6D9003FA36B /* custom_config_清新蓝 in Resources */ = {isa = PBXBuildFile; fileRef = 054DE6D71DD1C6D9003FA36B /* custom_config_清新蓝 */; };
+		054DE6DB1DD1C6D9003FA36B /* custom_config_午夜蓝 in Resources */ = {isa = PBXBuildFile; fileRef = 054DE6D81DD1C6D9003FA36B /* custom_config_午夜蓝 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +96,15 @@
 		054DE6C61DD1B2E5003FA36B /* UtilsMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilsMacro.h; sourceTree = "<group>"; };
 		054DE6C81DD1B553003FA36B /* BMKMainListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKMainListViewController.h; sourceTree = "<group>"; };
 		054DE6C91DD1B553003FA36B /* BMKMainListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMKMainListViewController.m; sourceTree = "<group>"; };
+		054DE6CC1DD1C0DB003FA36B /* BMKBaseMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKBaseMapViewController.h; sourceTree = "<group>"; };
+		054DE6CD1DD1C0DB003FA36B /* BMKBaseMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMKBaseMapViewController.m; sourceTree = "<group>"; };
+		054DE6CF1DD1C0F2003FA36B /* BMKPoiSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKPoiSearchViewController.h; sourceTree = "<group>"; };
+		054DE6D01DD1C0F2003FA36B /* BMKPoiSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMKPoiSearchViewController.m; sourceTree = "<group>"; };
+		054DE6D21DD1C27C003FA36B /* BMKSuperViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKSuperViewController.h; sourceTree = "<group>"; };
+		054DE6D31DD1C27C003FA36B /* BMKSuperViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMKSuperViewController.m; sourceTree = "<group>"; };
+		054DE6D61DD1C6D9003FA36B /* custom_config_黑夜 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "custom_config_黑夜"; sourceTree = "<group>"; };
+		054DE6D71DD1C6D9003FA36B /* custom_config_清新蓝 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "custom_config_清新蓝"; sourceTree = "<group>"; };
+		054DE6D81DD1C6D9003FA36B /* custom_config_午夜蓝 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "custom_config_午夜蓝"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +151,7 @@
 		054DE6611DD1A442003FA36B = {
 			isa = PBXGroup;
 			children = (
+				054DE6D51DD1C6BB003FA36B /* Resource */,
 				054DE6A01DD1AC1A003FA36B /* Vender */,
 				054DE66C1DD1A442003FA36B /* BaiduMapTest */,
 				054DE6861DD1A442003FA36B /* BaiduMapTestTests */,
@@ -158,8 +174,11 @@
 		054DE66C1DD1A442003FA36B /* BaiduMapTest */ = {
 			isa = PBXGroup;
 			children = (
+				054DE6D21DD1C27C003FA36B /* BMKSuperViewController.h */,
+				054DE6D31DD1C27C003FA36B /* BMKSuperViewController.m */,
 				054DE6C81DD1B553003FA36B /* BMKMainListViewController.h */,
 				054DE6C91DD1B553003FA36B /* BMKMainListViewController.m */,
+				054DE6CB1DD1C098003FA36B /* PoiSearch */,
 				054DE6C71DD1B489003FA36B /* BaseMap */,
 				054DE6701DD1A442003FA36B /* AppDelegate.h */,
 				054DE6711DD1A442003FA36B /* AppDelegate.m */,
@@ -244,8 +263,29 @@
 		054DE6C71DD1B489003FA36B /* BaseMap */ = {
 			isa = PBXGroup;
 			children = (
+				054DE6CC1DD1C0DB003FA36B /* BMKBaseMapViewController.h */,
+				054DE6CD1DD1C0DB003FA36B /* BMKBaseMapViewController.m */,
 			);
 			path = BaseMap;
+			sourceTree = "<group>";
+		};
+		054DE6CB1DD1C098003FA36B /* PoiSearch */ = {
+			isa = PBXGroup;
+			children = (
+				054DE6CF1DD1C0F2003FA36B /* BMKPoiSearchViewController.h */,
+				054DE6D01DD1C0F2003FA36B /* BMKPoiSearchViewController.m */,
+			);
+			path = PoiSearch;
+			sourceTree = "<group>";
+		};
+		054DE6D51DD1C6BB003FA36B /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				054DE6D61DD1C6D9003FA36B /* custom_config_黑夜 */,
+				054DE6D71DD1C6D9003FA36B /* custom_config_清新蓝 */,
+				054DE6D81DD1C6D9003FA36B /* custom_config_午夜蓝 */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -355,9 +395,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				054DE6DB1DD1C6D9003FA36B /* custom_config_午夜蓝 in Resources */,
 				054DE67D1DD1A442003FA36B /* LaunchScreen.storyboard in Resources */,
 				054DE6C41DD1AD96003FA36B /* mapapi.bundle in Resources */,
 				054DE67A1DD1A442003FA36B /* Assets.xcassets in Resources */,
+				054DE6D91DD1C6D9003FA36B /* custom_config_黑夜 in Resources */,
+				054DE6DA1DD1C6D9003FA36B /* custom_config_清新蓝 in Resources */,
 				054DE6781DD1A442003FA36B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -385,8 +428,11 @@
 			files = (
 				054DE6CA1DD1B553003FA36B /* BMKMainListViewController.m in Sources */,
 				054DE6751DD1A442003FA36B /* ViewController.m in Sources */,
+				054DE6D11DD1C0F2003FA36B /* BMKPoiSearchViewController.m in Sources */,
+				054DE6CE1DD1C0DB003FA36B /* BMKBaseMapViewController.m in Sources */,
 				054DE6721DD1A442003FA36B /* AppDelegate.m in Sources */,
 				054DE66F1DD1A442003FA36B /* main.m in Sources */,
+				054DE6D41DD1C27C003FA36B /* BMKSuperViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -630,6 +676,7 @@
 				054DE6991DD1A442003FA36B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		054DE69A1DD1A442003FA36B /* Build configuration list for PBXNativeTarget "BaiduMapTestTests" */ = {
 			isa = XCConfigurationList;
@@ -638,6 +685,7 @@
 				054DE69C1DD1A442003FA36B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		054DE69D1DD1A442003FA36B /* Build configuration list for PBXNativeTarget "BaiduMapTestUITests" */ = {
 			isa = XCConfigurationList;
@@ -646,6 +694,7 @@
 				054DE69F1DD1A442003FA36B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
