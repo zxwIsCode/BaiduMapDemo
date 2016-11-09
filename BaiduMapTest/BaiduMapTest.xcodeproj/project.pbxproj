@@ -39,6 +39,7 @@
 		054DE6D91DD1C6D9003FA36B /* custom_config_黑夜 in Resources */ = {isa = PBXBuildFile; fileRef = 054DE6D61DD1C6D9003FA36B /* custom_config_黑夜 */; };
 		054DE6DA1DD1C6D9003FA36B /* custom_config_清新蓝 in Resources */ = {isa = PBXBuildFile; fileRef = 054DE6D71DD1C6D9003FA36B /* custom_config_清新蓝 */; };
 		054DE6DB1DD1C6D9003FA36B /* custom_config_午夜蓝 in Resources */ = {isa = PBXBuildFile; fileRef = 054DE6D81DD1C6D9003FA36B /* custom_config_午夜蓝 */; };
+		05FC7E291DD2B98200D09FD5 /* BMKLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FC7E281DD2B98200D09FD5 /* BMKLocationViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +106,8 @@
 		054DE6D61DD1C6D9003FA36B /* custom_config_黑夜 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "custom_config_黑夜"; sourceTree = "<group>"; };
 		054DE6D71DD1C6D9003FA36B /* custom_config_清新蓝 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "custom_config_清新蓝"; sourceTree = "<group>"; };
 		054DE6D81DD1C6D9003FA36B /* custom_config_午夜蓝 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "custom_config_午夜蓝"; sourceTree = "<group>"; };
+		05FC7E271DD2B98200D09FD5 /* BMKLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKLocationViewController.h; sourceTree = "<group>"; };
+		05FC7E281DD2B98200D09FD5 /* BMKLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMKLocationViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,8 +181,9 @@
 				054DE6D31DD1C27C003FA36B /* BMKSuperViewController.m */,
 				054DE6C81DD1B553003FA36B /* BMKMainListViewController.h */,
 				054DE6C91DD1B553003FA36B /* BMKMainListViewController.m */,
-				054DE6CB1DD1C098003FA36B /* PoiSearch */,
 				054DE6C71DD1B489003FA36B /* BaseMap */,
+				05FC7E261DD2B93000D09FD5 /* Location */,
+				054DE6CB1DD1C098003FA36B /* PoiSearch */,
 				054DE6701DD1A442003FA36B /* AppDelegate.h */,
 				054DE6711DD1A442003FA36B /* AppDelegate.m */,
 				054DE6731DD1A442003FA36B /* ViewController.h */,
@@ -288,6 +292,15 @@
 			path = Resource;
 			sourceTree = "<group>";
 		};
+		05FC7E261DD2B93000D09FD5 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				05FC7E271DD2B98200D09FD5 /* BMKLocationViewController.h */,
+				05FC7E281DD2B98200D09FD5 /* BMKLocationViewController.m */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -356,6 +369,7 @@
 				TargetAttributes = {
 					054DE6691DD1A442003FA36B = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = V3VWCC65R7;
 						ProvisioningStyle = Automatic;
 					};
 					054DE6821DD1A442003FA36B = {
@@ -426,6 +440,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05FC7E291DD2B98200D09FD5 /* BMKLocationViewController.m in Sources */,
 				054DE6CA1DD1B553003FA36B /* BMKMainListViewController.m in Sources */,
 				054DE6751DD1A442003FA36B /* ViewController.m in Sources */,
 				054DE6D11DD1C0F2003FA36B /* BMKPoiSearchViewController.m in Sources */,
@@ -581,12 +596,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = V3VWCC65R7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Vender/BaiduMapAPI",
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/BaiduMapTest/BaiduMap.pch";
 				INFOPLIST_FILE = BaiduMapTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = dlwxDaviD.BaiduMapTest;
@@ -598,12 +615,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = V3VWCC65R7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Vender/BaiduMapAPI",
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/BaiduMapTest/BaiduMap.pch";
 				INFOPLIST_FILE = BaiduMapTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = dlwxDaviD.BaiduMapTest;

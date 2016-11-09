@@ -10,7 +10,7 @@
 #import "BMKSuperViewController.h"
 
 
-@interface BMKBaseMapViewController : BMKSuperViewController<BMKMapViewDelegate>
+@interface BMKBaseMapViewController : BMKSuperViewController<BMKMapViewDelegate,BMKLocationServiceDelegate>
 
 @property(nonatomic,strong)BMKMapView *mapView;
 
