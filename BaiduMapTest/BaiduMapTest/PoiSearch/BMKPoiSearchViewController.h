@@ -10,6 +10,6 @@
 #import "BMKSuperViewController.h"
 
 
-@interface BMKPoiSearchViewController : BMKSuperViewController
+@interface BMKPoiSearchViewController : BMKSuperViewController<BMKMapViewDelegate, BMKPoiSearchDelegate>
 
 @end
