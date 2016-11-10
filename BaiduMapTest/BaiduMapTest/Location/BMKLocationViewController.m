@@ -143,7 +143,7 @@
     }
 }
 
-#pragma mark - Delegate
+#pragma mark - BMKLocationServiceDelegate
 /**
  *在地图View将要启动定位时，会调用此函数
  *@param mapView 地图View

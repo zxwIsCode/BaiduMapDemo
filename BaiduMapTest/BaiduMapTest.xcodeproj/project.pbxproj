@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		050926181DD3FF16006E15A5 /* BMKGeocodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 050926171DD3FF16006E15A5 /* BMKGeocodeViewController.m */; };
 		054DE66F1DD1A442003FA36B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 054DE66E1DD1A442003FA36B /* main.m */; };
 		054DE6721DD1A442003FA36B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 054DE6711DD1A442003FA36B /* AppDelegate.m */; };
 		054DE6751DD1A442003FA36B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 054DE6741DD1A442003FA36B /* ViewController.m */; };
@@ -60,6 +61,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		050926161DD3FF16006E15A5 /* BMKGeocodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKGeocodeViewController.h; sourceTree = "<group>"; };
+		050926171DD3FF16006E15A5 /* BMKGeocodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMKGeocodeViewController.m; sourceTree = "<group>"; };
 		054DE66A1DD1A442003FA36B /* BaiduMapTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaiduMapTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		054DE66E1DD1A442003FA36B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		054DE6701DD1A442003FA36B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -151,6 +154,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		050926151DD3FEDA006E15A5 /* Geocode */ = {
+			isa = PBXGroup;
+			children = (
+				050926161DD3FF16006E15A5 /* BMKGeocodeViewController.h */,
+				050926171DD3FF16006E15A5 /* BMKGeocodeViewController.m */,
+			);
+			path = Geocode;
+			sourceTree = "<group>";
+		};
 		054DE6611DD1A442003FA36B = {
 			isa = PBXGroup;
 			children = (
@@ -181,6 +193,7 @@
 				054DE6D31DD1C27C003FA36B /* BMKSuperViewController.m */,
 				054DE6C81DD1B553003FA36B /* BMKMainListViewController.h */,
 				054DE6C91DD1B553003FA36B /* BMKMainListViewController.m */,
+				050926151DD3FEDA006E15A5 /* Geocode */,
 				054DE6C71DD1B489003FA36B /* BaseMap */,
 				05FC7E261DD2B93000D09FD5 /* Location */,
 				054DE6CB1DD1C098003FA36B /* PoiSearch */,
@@ -443,6 +456,7 @@
 				05FC7E291DD2B98200D09FD5 /* BMKLocationViewController.m in Sources */,
 				054DE6CA1DD1B553003FA36B /* BMKMainListViewController.m in Sources */,
 				054DE6751DD1A442003FA36B /* ViewController.m in Sources */,
+				050926181DD3FF16006E15A5 /* BMKGeocodeViewController.m in Sources */,
 				054DE6D11DD1C0F2003FA36B /* BMKPoiSearchViewController.m in Sources */,
 				054DE6CE1DD1C0DB003FA36B /* BMKBaseMapViewController.m in Sources */,
 				054DE6721DD1A442003FA36B /* AppDelegate.m in Sources */,

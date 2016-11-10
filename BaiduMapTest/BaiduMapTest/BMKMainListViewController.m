@@ -9,6 +9,7 @@
 #import "BMKMainListViewController.h"
 #import "BMKSuperViewController.h"
 #import "BMKLocationViewController.h"
+#import "BMKGeocodeViewController.h"
 
 #define kMainListCellId @"kMainListCellId"
 
@@ -43,8 +44,8 @@
 
 #pragma mark - Private Methods
 -(void)initWithDatas {
-    self.allBaiduArray =[@[@"BMKBaseMapViewController",@"BMKLocationViewController",@"BMKPoiSearchViewController"] mutableCopy];
-    self.allBaiduTitle =[@[@"基本功能",@"定位",@"POI搜索"] mutableCopy];
+    self.allBaiduArray =[@[@"BMKBaseMapViewController",@"BMKLocationViewController",@"BMKPoiSearchViewController",@"BMKGeocodeViewController"] mutableCopy];
+    self.allBaiduTitle =[@[@"基本功能",@"定位",@"POI搜索",@"地理（反）编码"] mutableCopy];
 }
 #pragma mark - Action Methods
 
