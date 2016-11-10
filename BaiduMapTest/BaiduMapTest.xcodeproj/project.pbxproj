@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		050926181DD3FF16006E15A5 /* BMKGeocodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 050926171DD3FF16006E15A5 /* BMKGeocodeViewController.m */; };
+		0509261C1DD416D7006E15A5 /* BMKOpenServiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0509261B1DD416D7006E15A5 /* BMKOpenServiceViewController.m */; };
 		054DE66F1DD1A442003FA36B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 054DE66E1DD1A442003FA36B /* main.m */; };
 		054DE6721DD1A442003FA36B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 054DE6711DD1A442003FA36B /* AppDelegate.m */; };
 		054DE6751DD1A442003FA36B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 054DE6741DD1A442003FA36B /* ViewController.m */; };
@@ -63,6 +64,8 @@
 /* Begin PBXFileReference section */
 		050926161DD3FF16006E15A5 /* BMKGeocodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKGeocodeViewController.h; sourceTree = "<group>"; };
 		050926171DD3FF16006E15A5 /* BMKGeocodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMKGeocodeViewController.m; sourceTree = "<group>"; };
+		0509261A1DD416D7006E15A5 /* BMKOpenServiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKOpenServiceViewController.h; sourceTree = "<group>"; };
+		0509261B1DD416D7006E15A5 /* BMKOpenServiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMKOpenServiceViewController.m; sourceTree = "<group>"; };
 		054DE66A1DD1A442003FA36B /* BaiduMapTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaiduMapTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		054DE66E1DD1A442003FA36B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		054DE6701DD1A442003FA36B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -163,6 +166,15 @@
 			path = Geocode;
 			sourceTree = "<group>";
 		};
+		050926191DD41569006E15A5 /* OpenService */ = {
+			isa = PBXGroup;
+			children = (
+				0509261A1DD416D7006E15A5 /* BMKOpenServiceViewController.h */,
+				0509261B1DD416D7006E15A5 /* BMKOpenServiceViewController.m */,
+			);
+			path = OpenService;
+			sourceTree = "<group>";
+		};
 		054DE6611DD1A442003FA36B = {
 			isa = PBXGroup;
 			children = (
@@ -193,6 +205,7 @@
 				054DE6D31DD1C27C003FA36B /* BMKSuperViewController.m */,
 				054DE6C81DD1B553003FA36B /* BMKMainListViewController.h */,
 				054DE6C91DD1B553003FA36B /* BMKMainListViewController.m */,
+				050926191DD41569006E15A5 /* OpenService */,
 				050926151DD3FEDA006E15A5 /* Geocode */,
 				054DE6C71DD1B489003FA36B /* BaseMap */,
 				05FC7E261DD2B93000D09FD5 /* Location */,
@@ -462,6 +475,7 @@
 				054DE6721DD1A442003FA36B /* AppDelegate.m in Sources */,
 				054DE66F1DD1A442003FA36B /* main.m in Sources */,
 				054DE6D41DD1C27C003FA36B /* BMKSuperViewController.m in Sources */,
+				0509261C1DD416D7006E15A5 /* BMKOpenServiceViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

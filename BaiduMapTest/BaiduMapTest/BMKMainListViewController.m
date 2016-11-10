@@ -10,6 +10,7 @@
 #import "BMKSuperViewController.h"
 #import "BMKLocationViewController.h"
 #import "BMKGeocodeViewController.h"
+#import "BMKOpenServiceViewController.h"
 
 #define kMainListCellId @"kMainListCellId"
 
@@ -44,8 +45,8 @@
 
 #pragma mark - Private Methods
 -(void)initWithDatas {
-    self.allBaiduArray =[@[@"BMKBaseMapViewController",@"BMKLocationViewController",@"BMKPoiSearchViewController",@"BMKGeocodeViewController"] mutableCopy];
-    self.allBaiduTitle =[@[@"基本功能",@"定位",@"POI搜索",@"地理（反）编码"] mutableCopy];
+    self.allBaiduArray =[@[@"BMKBaseMapViewController",@"BMKLocationViewController",@"BMKPoiSearchViewController",@"BMKGeocodeViewController",@"BMKOpenServiceViewController"] mutableCopy];
+    self.allBaiduTitle =[@[@"基本功能",@"定位",@"POI搜索",@"地理（反）编码",@"调启客户端"] mutableCopy];
 }
 #pragma mark - Action Methods
 
@@ -66,11 +67,17 @@
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    if (self.allBaiduArray) {
-        NSString *viewClassStr =self.allBaiduArray[indexPath.row];
-        BMKSuperViewController *viewController =[[NSClassFromString(viewClassStr) alloc]init];
-        viewController.navTitle =self.allBaiduTitle[indexPath.row];
-        [self.navigationController pushViewController:viewController animated:YES];
+    if (indexPath.row ==4) {
+        BMKOpenServiceViewController *openService =[[BMKOpenServiceViewController alloc]init];
+        openService.navTitle =self.allBaiduTitle[indexPath.row];
+        [self.navigationController pushViewController:openService animated:YES];
+    }else {
+        if (self.allBaiduArray) {
+            NSString *viewClassStr =self.allBaiduArray[indexPath.row];
+            BMKSuperViewController *viewController =[[NSClassFromString(viewClassStr) alloc]init];
+            viewController.navTitle =self.allBaiduTitle[indexPath.row];
+            [self.navigationController pushViewController:viewController animated:YES];
+        }
     }
 }
 #pragma mark - Setter & Getter
